@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Learning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    iframe {
+      width: 100%;
+      height: 60vh;
+      border: 2px solid #e5e7eb;
+      border-radius: 0.5rem;
+    }
+  </style>
+  <script>
+    function toggleTopic(topicNumber) {
+      const container = document.getElementById('topic-container-' + topicNumber);
+      container.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-blue-50 to-cyan-100 text-gray-800 font-sans p-4 sm:p-6">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl font-extrabold mb-10 text-center text-indigo-700 drop-shadow-md">AWS Learning Tracker</h1>
+    <div class="space-y-8">
+    
+      <!-- Topic 1 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(1)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">1. Introduction to AWS</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-1" class="mt-4 hidden">
+          <iframe src="/pdfs/1. Introduction_to_AWS.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 2 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(2)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">2. AWS EC2</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-2" class="mt-4 hidden">
+          <iframe src="/pdfs/2. AWS_M1_CC.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 3 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(3)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">3. Infrastructure</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-3" class="mt-4 hidden">
+          <iframe src="/pdfs/3. AWS_Infrastructure.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 4 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(4)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">4. Interacting with AWS</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-4" class="mt-4 hidden">
+          <iframe src="/pdfs/4. AWS_M3_Interacting.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 5 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(5)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">5. AWS Storage</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-5" class="mt-4 hidden">
+          <iframe src="/pdfs/5.AWS_M10_Storage.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topics 6 to 14 -->
+      <!-- You can replace the dummy PDF paths with actual files -->
+      <!-- Topic 6 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(6)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">6. AWS IAM</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-6" class="mt-4 hidden">
+          <iframe src="/pdfs/6.AWS_IAM.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Repeat for Topics 7–14 -->
+      <!-- Copy the above div block and change topic number, title, and PDF path -->
+
+      <!-- Topic 7 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(7)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">7. AWS VPC</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-7" class="mt-4 hidden">
+          <iframe src="/pdfs/7.AWS_VPC.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 8 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(8)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">8. AWS CloudFront</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-8" class="mt-4 hidden">
+          <iframe src="/pdfs/8.AWS_CloudFront.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 9 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(9)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">9. AWS RDS</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-9" class="mt-4 hidden">
+          <iframe src="/pdfs/9.AWS_RDS.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Topic 10 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(10)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">10. AWS Lambda</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-10" class="mt-4 hidden">
+          <iframe src="/pdfs/10.AWS_Lambda.pdf"></iframe>
+        </div>
+      </div>
+
+      <!-- Add topics 11, 12, 13, 14 similarly -->
+      <!-- Example for Topic 14 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleTopic(14)">
+          <h2 class="text-xl sm:text-2xl font-semibold text-indigo-700">14. AWS Security Best Practices</h2>
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div id="topic-container-14" class="mt-4 hidden">
+          <iframe src="/pdfs/14.AWS_Security.pdf"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
